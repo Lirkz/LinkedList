@@ -23,6 +23,16 @@ public class Main{
           {
             System.out.println(list.showValues());
           }
+          else if(input.equals("reverse"))
+          {
+            list.reverse();
+            System.out.println(list.showValues());
+          }
+          else if(input.equals("nReverse"))
+          {
+            list.nReverse(5);
+            System.out.println(list.showValues());
+          }
           else if(input.length() > 7 && input.substring(0, 6).equals("remove")){
               System.out.println("removing "+input.substring(7));
               System.out.println(list.deleteAValue(input.substring(7)).getValue());
